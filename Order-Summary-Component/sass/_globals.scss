@@ -1,0 +1,81 @@
+@use "components";
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background-image: url(../assets/img/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: components.$color-primary-pale;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 400px;
+    border-radius: 20px;
+}
+
+.card {
+    display: flex;
+    border: none;
+
+    .card-image {
+
+        img {
+
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    .card-content {
+        margin: 2rem;
+        text-align: center;
+
+        .card-title {
+            h2 {
+                font-weight: 900;
+            }
+        }
+
+        .card-desc {
+            color: components.$color-neutral-desaturated;
+        }
+    }
+}
+
+.plan {
+    background-color: components.$color-neutral-pale;
+    display: flex;
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+
+    .plan-text {
+        h4 {
+            font-weight: 700;
+            font-size: 16px;
+            color: components.$color-neutral-dark;
+        }
+
+        .plan-desc {
+            color: components.$color-neutral-desaturated;
+        }
+    }
+
+    a {
+        align-self: center;
+    }
+}
+
+.pay-btn {
+    margin-bottom: 2rem;
+}
+
+.attribution {
+    display: none;
+}
