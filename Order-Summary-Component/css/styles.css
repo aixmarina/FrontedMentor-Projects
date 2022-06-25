@@ -2,7 +2,7 @@
   background-color: hsl(245deg, 75%, 52%);
   color: hsl(225deg, 100%, 98%);
   border: none;
-  padding: 0.7rem 5rem;
+  padding: 0.7rem 5.5rem;
   border-radius: 10px;
   font-weight: 700;
   font-size: 15px;
@@ -50,21 +50,40 @@ body {
 
 .plan {
   background-color: hsl(225deg, 100%, 98%);
-  display: flex;
-  justify-content: space-between;
   padding: 0.8rem 1rem;
   border-radius: 10px;
   align-items: center;
   margin-bottom: 2rem;
-  gap: 1rem;
 }
-.plan .plan-text h4 {
+.plan .plan-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+.plan .plan-text .change {
+  padding-right: 0;
+  font-size: 14px;
+}
+.plan .plan-text .image {
+  align-self: center;
+  padding-right: 0;
+}
+.plan .plan-text .plan-title {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  align-self: center;
+}
+.plan .plan-text .plan-title h4 {
+  margin-bottom: 0;
   font-weight: 900;
   font-size: 16px;
   color: hsl(223deg, 47%, 23%);
 }
-.plan .plan-text .plan-desc {
+.plan .plan-text .plan-title p {
   color: hsl(224deg, 23%, 55%);
+  margin-bottom: 0;
 }
 .plan a {
   align-self: center;

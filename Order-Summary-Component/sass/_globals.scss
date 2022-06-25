@@ -55,23 +55,47 @@ body {
 
 .plan {
     background-color: components.$color-neutral-pale;
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
     padding: 0.8rem 1rem;
     border-radius: 10px;
     align-items: center;
     margin-bottom: 2rem;
-    gap: 1rem;
+    // gap: 1rem;
 
     .plan-text {
-        h4 {
-            font-weight: 900;
-            font-size: 16px;
-            color: components.$color-neutral-dark;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+
+        .change {
+            padding-right: 0;
+            font-size: 14px;
         }
 
-        .plan-desc {
-            color: components.$color-neutral-desaturated;
+        .image {
+            align-self: center;
+            padding-right: 0;
+        }
+
+        .plan-title {
+            display: flex;
+            flex-direction: column;
+            padding-left: 0;
+            align-self: center;
+
+            h4 {
+                margin-bottom: 0;
+                font-weight: 900;
+                font-size: 16px;
+                color: components.$color-neutral-dark;
+            }
+
+            p {
+                color: components.$color-neutral-desaturated;
+                margin-bottom: 0;
+            }
         }
     }
 
