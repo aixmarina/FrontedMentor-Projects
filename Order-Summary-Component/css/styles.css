@@ -2,8 +2,10 @@
   background-color: hsl(245deg, 75%, 52%);
   color: hsl(225deg, 100%, 98%);
   border: none;
-  padding: 0.5rem 5rem;
+  padding: 0.7rem 5rem;
   border-radius: 10px;
+  font-weight: 700;
+  font-size: 15px;
 }
 
 body {
@@ -19,13 +21,15 @@ body {
 }
 
 .container {
-  width: 400px;
-  border-radius: 20px;
+  width: 410px;
 }
 
 .card {
+  border-radius: 20px;
   display: flex;
   border: none;
+  overflow: hidden;
+  box-shadow: 0 30px 30px hsla(245deg, 75%, 52%, 0.178);
 }
 .card .card-image img {
   max-width: 100%;
@@ -37,14 +41,17 @@ body {
 }
 .card .card-content .card-title h2 {
   font-weight: 900;
+  color: hsl(223deg, 47%, 23%);
 }
-.card .card-content .card-desc {
+.card .card-content .card-desc p {
+  font-weight: 500;
   color: hsl(224deg, 23%, 55%);
 }
 
 .plan {
   background-color: hsl(225deg, 100%, 98%);
   display: flex;
+  justify-content: space-between;
   padding: 0.8rem 1rem;
   border-radius: 10px;
   align-items: center;
@@ -52,7 +59,7 @@ body {
   gap: 1rem;
 }
 .plan .plan-text h4 {
-  font-weight: 700;
+  font-weight: 900;
   font-size: 16px;
   color: hsl(223deg, 47%, 23%);
 }
@@ -61,10 +68,34 @@ body {
 }
 .plan a {
   align-self: center;
+  color: hsl(245deg, 75%, 52%);
+  font-weight: 700;
+  font-size: 16px;
+}
+.plan a:hover {
+  text-decoration: none;
+  color: rgb(118, 108, 241);
 }
 
 .pay-btn {
   margin-bottom: 2rem;
+  box-shadow: 0 20px 13px hsla(245deg, 75%, 52%, 0.178);
+}
+.pay-btn:hover {
+  background-color: rgb(118, 108, 241);
+}
+
+.cancel {
+  margin: 0 0 1rem 0;
+}
+.cancel a {
+  text-decoration: none;
+  color: hsl(224deg, 23%, 55%);
+  font-weight: 700;
+  font-size: 16px;
+}
+.cancel a:hover {
+  color: hsl(223deg, 47%, 23%);
 }
 
 .attribution {
