@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    width: 410px;
+    max-width: 410px;
 }
 
 .card {
@@ -38,6 +38,7 @@ body {
 
         .card-title {
             h2 {
+                font-size: 25px;
                 font-weight: 900;
                 color: components.$color-neutral-dark;
             }
@@ -46,6 +47,8 @@ body {
         .card-desc {
 
             p {
+                margin-top: 1rem;
+                font-size: 15px;
                 font-weight: 500;
                 color: components.$color-neutral-desaturated;
             }
@@ -55,13 +58,12 @@ body {
 
 .plan {
     background-color: components.$color-neutral-pale;
-    // display: flex;
-    // justify-content: space-between;
-    padding: 0.8rem 1rem;
+    padding: 1.5rem 1rem;
     border-radius: 10px;
     align-items: center;
     margin-bottom: 2rem;
-    // gap: 1rem;
+
+
 
     .plan-text {
         display: flex;
@@ -84,6 +86,7 @@ body {
             flex-direction: column;
             padding-left: 0;
             align-self: center;
+            gap: 0.5px;
 
             h4 {
                 margin-bottom: 0;
@@ -128,7 +131,7 @@ body {
         text-decoration: none;
         color: components.$color-neutral-desaturated;
         font-weight: 700;
-        font-size: 16px;
+        font-size: 14px;
 
         &:hover {
             color: components.$color-neutral-dark;
@@ -138,4 +141,34 @@ body {
 
 .attribution {
     display: none;
+}
+
+@media (max-width: 375px) {
+    body {
+        background-image: url(../assets/img/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-color: components.$color-primary-pale;
+        font-size: 13px;
+    }
+
+    .container {
+        width: 305px;
+    }
+
+    .plan {
+        padding: 0.8rem;
+
+        .plan-title {
+            padding-right: 0;
+        }
+    }
+
+    .pay-btn {
+        padding: 0.5rem 2.8rem;
+    }
+
+    .change {
+        padding-left: 0;
+    }
+
 }
